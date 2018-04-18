@@ -125,6 +125,9 @@
   'test function':
     'prefix': 'tf'
     'body': "func Test$1(t *testing.T) {\n\t$0\n}"
+  'test run function':
+    'prefix': 'tfr'
+    'body': "t.Run(\"${1:Test name}\", func(t *testing.T) {\n\t$0\n})"
   'go template':
     'prefix': 'got'
     'body': """
